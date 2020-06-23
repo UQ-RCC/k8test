@@ -48,7 +48,7 @@ install custom resource definition (kub version>=1.15)
 
     kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.15.1/cert-manager.crds.yaml
 
-this is important, otherwise step 6 throws errors like this:
+this is important, otherwise creating issuer (later) will throw errors like this:
 
     unable to recognize "issuer.yaml": no matches for kind "ClusterIssuer" in version "cert-manager.io/v1alpha2"
     unable to recognize "issuer.yaml": no matches for kind "ClusterIssuer" in version "cert-manager.io/v1alpha2"
